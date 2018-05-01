@@ -1,8 +1,11 @@
 package edu.illinois.cs.cs125.lab12;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -24,6 +27,7 @@ public final class MainActivity extends AppCompatActivity {
     /** Request queue for our API requests. */
     private static RequestQueue requestQueue;
 
+
     /**
      * Run when this activity comes to the foreground.
      *
@@ -39,6 +43,17 @@ public final class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         startAPICall();
+
+        Button hipHop = (Button) findViewById(R.id.hip_hop);
+        hipHop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+                //Intent intent = new Intent(view.getContext(), AnActivity.class);
+                //view.getContext().startActivity(intent);
+            }
+        });
+
+
     }
 
     /**

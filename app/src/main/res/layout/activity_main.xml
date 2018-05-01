@@ -4,13 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom"
+    android:gravity="top|center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/music_background"
+    >
 
-    <Button
-        android:id="@+id/refresh_weather"
+    <SearchView
+        android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update" />
+        android:gravity="top" />
+
+    <Button
+        android:id="@+id/hip_hop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hip Hop" />
+
+    <Button
+        android:id="@+id/rap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rap" />
+
+    <Button
+        android:id="@+id/pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pop" />
+
+    <Button
+        android:id="@+id/r_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rhythm and Blues" />
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rock" />
+
 </LinearLayout>
